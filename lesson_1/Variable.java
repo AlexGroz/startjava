@@ -1,21 +1,21 @@
 public class Variable {
-	public static void main (String[] args){
-		byte b = 1;
-		short c = 2;
-		int d = 3;
-		long e = 4;
-		float f = 3.14f;
-		double g = 3.14d;
-		char h = 'h';
-		boolean j = true;
+	public static void main(String[] args) {
+		byte keepByte = 1;
+		short keepShort = 2;
+		int keepInt = 3;
+		long keepLong = 4;
+		float keepFloat = 3.14f;
+		double keepDouble = 3.14d;
+		char keepChar = 'h';
+		boolean keepBoolean = true;
 		
-		System.out.println ("byte b = "+b);
-		System.out.println ("short c = "+c);
-		System.out.println ("int d = "+d);
-		System.out.println ("long e = "+e);
-		System.out.println ("float f = "+f);
-		System.out.println ("double g = "+g);
-		System.out.println ("char h = "+h);
-		System.out.println ("boolean j  = "+j);
+		System.out.println ("byte b = "+ keepByte);
+		System.out.println ("short c = " + keepShort);
+		System.out.println ("int d = " + keepInt);
+		System.out.println ("long e = " + keepLong);
+		System.out.println ("float f = " + keepFloat );
+		System.out.println ("double g = " + keepDouble);
+		System.out.println ("char h = " + keepChar);
+		System.out.println ("boolean j  = " + keepBoolean);
 	}
 }	

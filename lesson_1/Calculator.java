@@ -1,30 +1,32 @@
 public class Calculator {
-	public static void main (String[] args ){
-		
-		int a,b;
-		char sign;
-
-		a = 5;
-	        b = 2;
-		sign = '^';
+	public static void main(String[] args) {	
+		int a = 5;
+		int b = 2;
+		char sign = '/';
 		
 		if (sign == '+') {
-			System.out.println (""+(a+b));	
-		}
-		if (sign == '-') {
-			System.out.println (""+(a-b));	
-		}
-		if (sign == '*') {
-			System.out.println (""+(a*b));	
-		}	
-		if (sign == '/') {
-			System.out.println (""+(a/b));	
-		}	
-		if (sign == '%') {
-			System.out.println (""+(a%b));	
-		}	
-		if (sign == '^') {
-			System.out.println (""+(a*a));	
+			System.out.println ("" + (a + b));	
+		} else{
+			if (sign == '-') {
+				System.out.println ("" + (a - b));	
+			} else{
+				if (sign == '*') {
+					System.out.println ("" + (a * b));	
+				} else {	
+					if (sign == '/') {
+						System.out.println ("" + (a / b));	
+					} else{	
+						if (sign == '%') {
+							System.out.println ("" + (a % b));	
+						} else{	
+							if (sign == '^') {
+								System.out.println ("" + (a * a));	
+								System.out.println ("" + (b * b));
+							}
+						}
+					}
+				}
+			}
 		}	
 	}		
 }	
