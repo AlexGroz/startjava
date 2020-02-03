@@ -1,21 +1,21 @@
 public class Variable {
 	public static void main(String[] args) {
-		byte keepByte = 1;
-		short keepShort = 2;
-		int keepInt = 3;
-		long keepLong = 4;
-		float keepFloat = 3.14f;
-		double keepDouble = 3.14d;
-		char keepChar = 'h';
-		boolean keepBoolean = true;
+		byte quantityCores = 8;
+		short frequencyProcessor = 2000;
+		int quantityTransistors = 400000;
+		long quantitySemyconductors = 500000000;
+		float valueRom = 400.00f;
+		double valueRam = 4000.00d;
+		char indexModelProcessor = 'A';
+		boolean isMouse = false;
 		
-		System.out.println ("byte b = "+ keepByte);
-		System.out.println ("short c = " + keepShort);
-		System.out.println ("int d = " + keepInt);
-		System.out.println ("long e = " + keepLong);
-		System.out.println ("float f = " + keepFloat );
-		System.out.println ("double g = " + keepDouble);
-		System.out.println ("char h = " + keepChar);
-		System.out.println ("boolean j  = " + keepBoolean);
+		System.out.println("byte b = "+ quantityCores);
+		System.out.println("short c = " + frequencyProcessor);
+		System.out.println("int d = " + quantityTransistors);
+		System.out.println("long e = " + quantitySemyconductors);
+		System.out.println("float f = " + valueRom );
+		System.out.println("double g = " + valueRam);
+		System.out.println("char h = " + indexModelProcessor);
+		System.out.println("boolean j  = " + isMouse);
 	}
 }	
