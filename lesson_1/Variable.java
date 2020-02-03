@@ -9,13 +9,13 @@ public class Variable {
 		char indexModelProcessor = 'A';
 		boolean isMouse = false;
 		
-		System.out.println("byte b = "+ quantityCores);
-		System.out.println("short c = " + frequencyProcessor);
-		System.out.println("int d = " + quantityTransistors);
-		System.out.println("long e = " + quantitySemyconductors);
-		System.out.println("float f = " + valueRom );
-		System.out.println("double g = " + valueRam);
-		System.out.println("char h = " + indexModelProcessor);
-		System.out.println("boolean j  = " + isMouse);
+		System.out.println("byte quantityCores = "+ quantityCores);
+		System.out.println("short frequencyProcessor = " + frequencyProcessor);
+		System.out.println("int quantityTransistor = " + quantityTransistors);
+		System.out.println("long quantitySemyconductors = " + quantitySemyconductors);
+		System.out.println("float valueRom = " + valueRom );
+		System.out.println("double valueRam = " + valueRam);
+		System.out.println("char indexModelProcessor = " + indexModelProcessor);
+		System.out.println("boolean isMouse  = " + isMouse);
 	}
 }	

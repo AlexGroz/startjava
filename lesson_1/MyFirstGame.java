@@ -3,14 +3,19 @@ public class MyFirstGame {
 		int number = 5;
 		int numberUser = 7;
 
-		if (numberUser > number) {
-			System.out.println("Введенное вами число больше того, что загадал компьютер");
-		} else{
-			if (numberUser < number) {
-				System.out.println ("Введенное вами число меньше того, что  загадал компьютер");
+		while(true){
+			if (numberUser > number) {
+				System.out.println("Введенное вами число больше того, что загадал компьютер");
+				numberUser--;
 			} else{
-				System.out.println ("Угадал");
-			}	
+				if (numberUser < number) {
+					System.out.println ("Введенное вами число меньше того, что  загадал компьютер");
+					numberUser++;
+				} else{
+					System.out.println ("Угадал");
+					break;
+				}	
+			}
 		}
 
 	}	
