@@ -2,7 +2,7 @@ public class Calculator {
 	public static void main(String[] args) {	
 		int a = 5;
 		int b = 3;
-		int Extent = 1;
+		int extent = 1;
 		char sign = '^';
 
 		if (sign == '+') {
@@ -17,7 +17,7 @@ public class Calculator {
 			System.out.println(a % b);	
 		} else if (sign == '^') {
 			for (int i = 1; i <= b; i++) {
-			Extent *= a;
+				extent *= a;
 			}
 			System.out.println(Extent);
 		}					
