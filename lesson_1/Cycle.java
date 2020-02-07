@@ -1,21 +1,22 @@
 public class Cycle {
 	public static void main(String[] args) {
-		int i = 0;
 		
-		for ( ; i <= 20; i++) {
+		for (int i = 0; i <= 20; i++) {
 			System.out.println(i);
 		}	
 		
-		i = 8;
-		while (i != -6) {
-			i = i - 2;
-			System.out.println(i);	
+		int counter = 8;
+		while (counter != -6) {
+			counter -= 2;
+			System.out.println(counter);	
 		}
 		
-		i = 9;
+		counter = 10;
 		do {
-			i = i + 2;
-			System.out.println(i);		
-		} while (i != 19);	
+			counter++;
+			if ((counter%2) != 0){
+				System.out.println(counter);		
+			}	
+		} while (counter != 20);	
 	}
 }
