@@ -1,6 +1,5 @@
 public class Cycle {
 	public static void main(String[] args) {
-		
 		for (int i = 0; i <= 20; i++) {
 			System.out.println(i);
 		}	
@@ -12,11 +11,14 @@ public class Cycle {
 		}
 		
 		counter = 10;
+		int amount = 0;
 		do {
 			counter++;
-			if ((counter%2) != 0){
-				System.out.println(counter);		
+			if ((counter % 2) != 0) {
+				amount += counter;		
 			}	
 		} while (counter != 20);	
+
+		System.out.println(amount);
 	}
 }
