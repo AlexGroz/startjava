@@ -46,8 +46,8 @@ public class Calculator {
 				}		
 				return extent;
 			default:
-			System.out.println("Ответа не будет, вы ввели неверное значение!");
-			return 0;	
+				System.out.println("Ответа не будет, вы ввели неверное значение!");
+				return 0;	
 		}
 	}			
 }	
