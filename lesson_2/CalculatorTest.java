@@ -24,7 +24,7 @@ public class CalculatorTest {
 
 			System.out.print("Введите второе число: ");
 			calc.setB(scan.nextInt());
-			System.out.println("Ответ = " + calc.calculate(calc.getA(), calc.getB(), calc.getSign()));
+			System.out.println("Ответ = " + calc.calculate());
 			
 			do {
 				System.out.print("Хотите продолжить? [да/нет]: ");
@@ -32,9 +32,6 @@ public class CalculatorTest {
 				answerUser = scan.nextLine();
 				if (answerUser.equals("нет")) break;
 			} while(!answerUser.equals("да"));
-			
-			if (answerUser.equals("нет")) break;			 
-			
 		} while (answerUser.equals("да"));
 	}
 }

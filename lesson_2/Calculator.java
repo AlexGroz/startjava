@@ -27,7 +27,7 @@ public class Calculator {
 		return sign;
 	}
 
-	int calculate(int a, int b, char sign) {
+	int calculate() {
 		switch (sign) {
 			case '+': 
 				return (a + b);	
