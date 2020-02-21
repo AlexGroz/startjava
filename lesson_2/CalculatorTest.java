@@ -25,13 +25,11 @@ public class CalculatorTest {
 			System.out.print("Введите второе число: ");
 			calc.setB(scan.nextInt());
 			System.out.println("Ответ = " + calc.calculate());
-			
+			scan.nextLine();
 			do {
 				System.out.print("Хотите продолжить? [да/нет]: ");
-				scan.nextLine();
 				answerUser = scan.nextLine();
-				if (answerUser.equals("нет")) break;
-			} while(!answerUser.equals("да"));
+			} while(!answerUser.equals("да") && !answerUser.equals("нет"));
 		} while (answerUser.equals("да"));
 	}
 }
