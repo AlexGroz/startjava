@@ -5,19 +5,24 @@ public class CalculatorTest {
 		Calculator calc = new Calculator();
 	       	Scanner scan = new Scanner(System.in);
 		String answerUser = "";
+		char tempSign;
 
 		do {
 			System.out.print("Введите первое число: ");
 			calc.setA(scan.nextInt());
 			System.out.print("Введите знак математической операции: ");
-			calc.setSign(scan.next().charAt(0));
+			tempSign = scan.next().charAt(0);
+			//calc.setSign(scan.next().charAt(0));
 			
 			while (true) {				
-				if (calc.getSign() != '+' && calc.getSign() != '-' && calc.getSign() != '/' && calc.getSign() != '*' && calc.getSign() != '^') {
+				//if (calc.getSign() != '+' && calc.getSign() != '-' && calc.getSign() != '/' && calc.getSign() != '*' && calc.getSign() != '^') {
+				if (tempSign != '+' && tempSign != '-' && tempSign != '/' && tempSign != '*' && tempSign != '^') {
 					System.out.println("Выберите математическую операцию из +, -, *, /, ^");
 					System.out.print("Введите снова знак математической операции: ");
-					calc.setSign(scan.next().charAt(0));
+					//calc.setSign(scan.next().charAt(0));
+					tempSign = scan.next().charAt(0);
 				} else {
+					calc.setSign(tempSign);
 					break;
 				}	
 			}

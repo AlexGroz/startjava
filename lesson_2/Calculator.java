@@ -3,28 +3,28 @@ public class Calculator {
 	private int b;
 	private char sign;
 
+	public int getA() {
+		return a;
+	}
+	
 	public void setA(int a) {
 		this.a = a;
+	}
+	
+	public int getB() {
+		return b;
 	}
 
 	public void setB(int b) {
 		this.b = b;
 	}
 
-	public void setSign(char sign) {
-		this.sign = sign;
-	}
-
-	public int getA() {
-		return a;
-	}
-
-	public int getB() {
-		return b;
-	}
-
 	public char getSign() {
 		return sign;
+	}
+
+	public void setSign(char sign) {
+		this.sign = sign;
 	}
 
 	int calculate() {
