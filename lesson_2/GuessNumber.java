@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class GuessNumber {
 	private Scanner scan = new Scanner(System.in);
-	private int tempSafe = 0;
 	private int compNumber = (int)(Math.random() * 101);
 	private Player player1;
 	private Player player2;
@@ -24,7 +23,7 @@ public class GuessNumber {
 			} else if (player1.getNumber() < compNumber) {
 				System.out.println("Введенное " + player1.getName() + "  число меньше того, что  загадал компьютер");
 			} else {
-				System.out.println(player1.getName() + " угадал и выйграл");
+				System.out.println(player1.getName() + " угадал и выиграл");
 				break;
 			}
 		
@@ -33,7 +32,7 @@ public class GuessNumber {
 			} else if (player2.getNumber() < compNumber) {
 				System.out.println("Введенное " + player2.getName() + "  число меньше того, что  загадал компьютер");
 			} else {
-				System.out.println(player2.getName() + " угадал и выйграл");
+				System.out.println(player2.getName() + " угадал и выиграл");
 				break;
 			}
 		}
