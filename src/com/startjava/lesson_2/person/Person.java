@@ -1,6 +1,8 @@
+package com.startjava.lesson_2.person;
+
 public class Person {
 	char sex = 'm'; 
-	String name = "Ivan"
+	String name = "Ivan";
 	int height = 180;
 	int weight = 80;
 	int age = 30;

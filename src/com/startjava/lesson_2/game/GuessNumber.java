@@ -1,3 +1,5 @@
+package com.startjava.lesson_2.game;
+
 import java.lang.Math.*;
 import java.util.Scanner;
 
