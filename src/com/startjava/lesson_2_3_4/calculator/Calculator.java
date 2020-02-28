@@ -1,4 +1,4 @@
-package com.startjava.lesson_2_3.calculator;
+package com.startjava.lesson_2_3_4.calculator;
 
 public class Calculator {
 	private int a;
@@ -31,22 +31,18 @@ public class Calculator {
 
 	int calculate() {
 		switch (sign) {
-			case '+': 
-				return (a + b);	
+			case '+':
+				return Math.addExact(a, b);
 			case '-':
-				return (a - b);	
+				return Math.subtractExact(a, b);
 			case '*':
-				return (a * b);	
+				return Math.multiplyExact(a, b);
 			case '/':
-				return (a / b);	
+				return Math.floorDiv(a, b);
 			case '%':
-				return (a % b);	
+				return (int)Math.IEEEremainder(a, b);
 			case '^': 
-				int extent = 1;
-				for (int i = 1; i <= b; i++) {
-					extent *= a;
-				}		
-				return extent;
+				return (int)(Math.pow(a, b));
 			default:
 				System.out.println("Ответа не будет, вы ввели неверное значение!");
 				return 0;	
