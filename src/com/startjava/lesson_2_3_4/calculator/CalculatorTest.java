@@ -17,10 +17,11 @@ public class CalculatorTest {
 			do {
 				System.out.print("Введите ваше выражение в формате [x + y]: ");
 				mathExample = scan.nextLine();
-				for (String retval : mathExample.split(" ")) {
-					count++;
-					valueMathExp[count] = retval;
-				}
+				//for (String retval : mathExample.split(" ")) {
+//					count++;
+//					valueMathExp[count] = retval;
+//				}
+				valueMathExp = mathExample.split(" ");
 				count = -1;
 				sign = valueMathExp[1].charAt(0);
 			} while(sign != array[0] && sign != array[1] && sign != array[2] && sign != array[3] && sign != array[4] && sign != array [5]);
