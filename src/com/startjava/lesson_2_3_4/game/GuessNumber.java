@@ -11,14 +11,10 @@ public class GuessNumber {
 	private int count;
 	boolean isBreak = false;
 
-	GuessNumber(Player player1, Player player2, int count) {
+	GuessNumber(Player player1, Player player2) {
 		this.player1 = player1;
 		this.player2 = player2;
-		this.count = count;
-	}
-
-	public int getCount() {
-		return count;
+		count = -1;
 	}
 
 	public void play() {
@@ -26,8 +22,8 @@ public class GuessNumber {
 			count++;
 			inputNumber(player1);
 			inputNumber(player2);
-			considerGoal(player1);
-			considerGoal(player2);
+			compare(player1);
+			compare(player2);
 		} while (count < 9 && !isBreak);
 		count++;
 		printPlayerNumbers(player1);
@@ -40,7 +36,7 @@ public class GuessNumber {
 		player.setNumber(count, scan.nextInt());
 	}
 
-	public void considerGoal(Player player) {
+	public void compare(Player player) {
 		if (player.getNumber(count) > compNumber) {
 			System.out.println("Введенное " + player.getName() + " число больше того, что загадал компьютер");
 		} else if (player.getNumber(count) < compNumber) {
