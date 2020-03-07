@@ -21,22 +21,25 @@ public class GuessNumber {
 		do {
 			count++;
 			inputNumber(player1);
+            compare(player1);
+            player1.setCount(count);
+            if(isBreak) break;
 			inputNumber(player2);
-			compare(player1);
 			compare(player2);
+			player2.setCount(count);
 		} while (count < 9 && !isBreak);
-		count++;
+		//count++;
 		printPlayerNumbers(player1);
 		printPlayerNumbers(player2);
 		count = 0;
 	}
 
-	public void inputNumber(Player player) {
+	private void inputNumber(Player player) {
 		System.out.println(player.getName() + " введите число: ");
 		player.setNumber(count, scan.nextInt());
 	}
 
-	public void compare(Player player) {
+	private void compare(Player player) {
 		if (player.getNumber(count) > compNumber) {
 			System.out.println("Введенное " + player.getName() + " число больше того, что загадал компьютер");
 		} else if (player.getNumber(count) < compNumber) {
@@ -47,9 +50,10 @@ public class GuessNumber {
 		}
 	}
 
-	public void printPlayerNumbers(Player player) {
+	private void printPlayerNumbers(Player player) {
 		System.out.print("Числа " + player.getName() + ": ");
-		System.out.println(Arrays.toString(player.getNumbers(count)));
+		System.out.println(Arrays.toString(player.getNumbers(player.getCount() + 1)));
+		//player.setCount(count);
 	}
 }
 
