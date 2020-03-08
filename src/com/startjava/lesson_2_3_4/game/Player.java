@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Player {
 	private String name;
-	private int count;
+	private int count = 0;
 	private int[] numbers = new int[10];
 
 	Player(String name) {
@@ -36,6 +36,7 @@ public class Player {
 	}
 
 	public void clear(int i) {
-		Arrays.fill(numbers, i);
+		Arrays.fill(numbers, 0, i, 0);
+		System.out.println(Arrays.toString(numbers));
 	}
 }

@@ -18,10 +18,6 @@ public class GuessNumberTest {
 				System.out.print("Хотите продолжить? [да/нет]: ");
 				answerUser = scan.nextLine();
 			} while(!answerUser.equals("да") && !answerUser.equals("нет"));
-			if(answerUser.equals("да")) {
-				player1.clear(player1.getCount());
-				player2.clear(player2.getCount());
-			}
 		} while (answerUser.equals("да"));
 	}
 }
