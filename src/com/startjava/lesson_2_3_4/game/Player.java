@@ -37,6 +37,5 @@ public class Player {
 
 	public void clear(int i) {
 		Arrays.fill(numbers, 0, i, 0);
-		System.out.println(Arrays.toString(numbers));
 	}
 }
